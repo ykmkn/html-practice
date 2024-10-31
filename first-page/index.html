@@ -22,6 +22,7 @@
         <div class="main">
             <div class="content">
                 <h1>About this page</h1>
+                <img alt="html" src="./test-img.png">
                 <p>このページは、htmlとcssの勉強用にたてられた、最初のページです。<br><strong>以下文章はchatgptで生成していて意味はないです。</strong></p>
                 <section>
                     <h2>HTMLの基本要素</h2>
@@ -114,13 +115,27 @@
                     <p>レスポンシブデザインを実践することで、全てのユーザーに対して優れた体験を提供できるようになります。ぜひ、さまざまなデバイスでの表示を確認しながら、効果的なデザインを追求してみてください。</p>
                 </section>
             </div>
-            <div class="sidebar">yukimikan
+            <div class="sidebar">
+                <h3>プロフィール</h3>
                 <a href="https://github.com/ykmkn?tab=repositories"><img alt="yukimikan" src="./yukimikan.jpg"></a>
+                <div class="name">yukimikan</div>
                 <div class="aboutme">茨城在住。インフラ系エンジニア。フロントエンドの勉強はじめました。</div>
-                <div class="ask">お問い合わせ</div>
+                <h3>お問い合わせ</h3>
+                <form class="form">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email">
+                    <label for="message">お問い合わせ内容</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit">送信</button>
+                </form>
             </div>
         </div>
-        <div class="footer">フッター</div>
+        <div class="footer">
+            <p>© 2024 yukimikan</p>
+        </div>
+    </div>
 </body>
 
 </html>
